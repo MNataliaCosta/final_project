@@ -1,23 +1,14 @@
-header{
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #333;
-}
-
 body{
   background-color: #efeff5;
-  font-family: 'Roboto', sans-serif;
-  /* padding-block-start: 5rem; */
+  font-family: Roboto;
+  padding-block-start: 5rem;
 }
 
 nav ul{
   list-style-type: none;
-  /* position: fixed; */
-  /* display: block; */
-  /* width: 100%; */
-  display: flex;
+  position: fixed;
+  display: block;
+  width: 100%;
   top: 0;
   margin: 0;
   padding: 0;
@@ -36,13 +27,12 @@ nav a{
   padding: 20px
 }
 
-nav a:focus{
+nav a:hover{
   background-color: #111;
 }
 
 h1{
   font-size: 30px;
-  color: white;
 }
 
 /* h2, p{
@@ -50,27 +40,14 @@ h1{
 } */
 
 main{
-  padding-left: 2vw;
-  padding-right: 2vw;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 img {
   max-width: 100%;
   height: auto;
   border: 1px groove #021a40;
-}
-
-/* maybe include a :focus transition to grayscale?*/
-#mvn-callout{
-  background-image: url(../images/mvn.JPG);
-}
-
-#walkher-callout{
-  background-image: url(../images/walkher.jpg);
-}
-
-#gooru-callout{
-  background-image: url(../images/gooru.JPG);
 }
 
 .skip a{
@@ -82,7 +59,8 @@ img {
   overflow:hidden;
 }
 
-.skip a:focus{
+.skip a:focus
+{
   position:static;
   width:auto;
   height:auto;
@@ -94,33 +72,8 @@ img {
   font-style: italic;
 }
 
-.project-tile{
-  position: relative;
-  margin-bottom: 2vh;
-  border: 1px groove #7b7e84;
-  background-size: 100%;
-  height: 30vh;
-  text-align: center;
-
-}
-
-.project-tile ul{
+.projects ul{
   padding-bottom: 20px;
-  list-style-type: none;
-  margin: auto;
-}
-
-.center{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.gallery{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: stretch;
 }
 
 .resume h2{
@@ -128,57 +81,5 @@ img {
 }
 
 .profile{
-  display: flex;
-  justify-content: center;
-}
-
-.container{
-  display: grid;
-  grid-template-columns: auto;
-}
-
-.container p{
-  padding: 2vh;
-}
-
-.container img{
-  margin: 2vh;
-}
-
-/* responsive design for larger screens */
-@media screen and (min-width:500px){
-  .projects{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-  }
-
-  .project-tile{
-    background-size: 100%;
-    height: 30vh;
-    width: 50vh;
-  }
-
-  .gallery{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-    justify-content: center;
-	}
-
-  .gallery img{
-		max-width: 30%;
-		height: 30vh;
-	}
-
-  .container{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-
-  .profile img{
-    width:50vh;
-    height: 75vh;
-  }
-
+  margin: 10px;
 }

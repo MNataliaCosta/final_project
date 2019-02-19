@@ -8,17 +8,12 @@ header{
 
 body{
   background-color: #efeff5;
-  font-family: Roboto;
-  padding-block-start: 5rem;
   font-family: 'Roboto', sans-serif;
   /* padding-block-start: 5rem; */
 }
 
 nav ul{
   list-style-type: none;
-  position: fixed;
-  display: block;
-  width: 100%;
   /* position: fixed; */
   /* display: block; */
   /* width: 100%; */
@@ -26,11 +21,21 @@ nav ul{
   top: 0;
   margin: 0;
   padding: 0;
-@@ -27,21 +36,22 @@ nav a{
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float:right;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  display: block;
   padding: 20px
 }
 
-nav a:hover{
 nav a:focus{
   background-color: #111;
 }
@@ -45,14 +50,13 @@ h1{
 } */
 
 main{
-  padding-left: 20px;
-  padding-right: 20px;
   padding-left: 2vw;
   padding-right: 2vw;
 }
 
 img {
-@@ -50,6 +60,19 @@ img {
+  max-width: 100%;
+  height: auto;
   border: 1px groove #021a40;
 }
 
@@ -72,21 +76,24 @@ img {
 .skip a{
   position:absolute;
   left:-10000px;
-@@ -59,8 +82,7 @@ img {
+  top: auto;
+  width: 1px;
+  height: 1px;
   overflow:hidden;
 }
 
-.skip a:focus
-{
 .skip a:focus{
   position:static;
   width:auto;
   height:auto;
-@@ -72,14 +94,91 @@ img {
+}
+
+.current{
+  background-color: #993366;
+  font-weight: bold;
   font-style: italic;
 }
 
-.projects ul{
 .project-tile{
   position: relative;
   margin-bottom: 2vh;
@@ -94,7 +101,6 @@ img {
   background-size: 100%;
   height: 30vh;
   text-align: center;
-
 }
 
 .project-tile ul{
@@ -121,7 +127,6 @@ img {
 }
 
 .profile{
-  margin: 10px;
   display: flex;
   justify-content: center;
 }

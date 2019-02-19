@@ -62,14 +62,17 @@ img {
 
 /* maybe include a :focus transition to grayscale?*/
 #mvn-callout{
+  background-color: white;
   background-image: url(../images/mvn.JPG);
 }
 
 #walkher-callout{
+  background-color: white;
   background-image: url(../images/walkher.jpg);
 }
 
 #gooru-callout{
+  background-color: white;
   background-image: url(../images/gooru.JPG);
 }
 

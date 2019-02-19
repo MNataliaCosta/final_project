@@ -104,15 +104,24 @@ img {
 }
 
 .project-tile ul{
-  padding-bottom: 20px;
   list-style-type: none;
   margin: auto;
 }
 
 .center{
   position: absolute;
-  top: 50%;
+    top: 50%;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   transform: translateY(-50%);
+  background-color: #333;
+  color: white;
+  opacity: 0.9;
+}
+
+.center a{
+  text-decoration: none;
+  color: white;
 }
 
 .gallery{

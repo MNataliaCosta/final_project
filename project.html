@@ -2,25 +2,29 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name = ‘viewport’ content=‘width=device-width, initial-scale=1, maximum-scale=1’>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" href="images/beach.png" type="images/beach.png"/>
     <title>Natalia Costa - Projects</title>
   </head>
   <body>
 
+<!-- testing h1 on header to use flexbox for positioning navbar; replicate across htmls if it works -->
     <header>
       <p class="skip"><a href="#main-content-project">Skip to content</a></p>
+      <h1>NATALIA COSTA</h1>
       <nav>
         <ul>
-          <li><a href="about.html">ABOUT</a></li>
           <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <h1>NATALIA COSTA</h1>
 
       <p><a href="index.html">home </a>> projects</p>
 
@@ -30,15 +34,18 @@
         <li>- women's safety</li>
       </ul>
 
-      <img src="images/initial_sketches.JPG" alt="">
-      <img src="images/int_sketches1.JPG" alt="">
-      <img src="images/int_sketches2.JPG" alt="">
-      <img src="images/persona.JPG" alt="">
-      <img src="images/storymap.jpg" alt="">
-      <img src="images/qoc.JPG" alt="">
-      <img src="images/project1.JPG" alt="">
-      <img src="images/project2.jpg" alt="">
-      <img src="images/project3.jpg" alt="">
+<!-- since it'll be a composition of images and text, this is a good case to use divs around the blocks -->
+      <div class="gallery">
+        <img src="images/initial_sketches.JPG" alt="Picture displaying set of 8 initial sketches">
+        <img src="images/int_sketches1.JPG" alt="First 4 sketches (of a total of 8) further developed">
+        <img src="images/int_sketches2.JPG" alt="Last 4 skecthes (of a total of 8) further developed">
+        <img src="images/persona.JPG" alt="Picture showcasing an example of one of the personas">
+        <img src="images/storymap.jpg" alt="Story Map organized as a sequence of post-its on a table">
+        <img src="images/qoc.JPG" alt="Diagram containing QOC (Questions, Options, and Criteria) for how the user could find a company for her walk">
+        <img src="images/project1.JPG" alt="Mockup of the home page for the app">
+        <img src="images/project2.jpg" alt="Three mobile phone screens representing the SOS and safety features on the app">
+        <img src="images/project3.jpg" alt="Three mobile phone screens represnting the steps for finding a walking company on the app ">
+      </div>
 
 
       <h3>Problem Statement</h3>
@@ -72,8 +79,8 @@
 
     <footer>
       <p>Contact information:</p>
-      <a class="icon" href="mailto:mncosta@umich.edu"><img src="images/email.png" alt="email icon"></a>
-      <a class="icon" href="https://www.linkedin.com/in/m-natalia-costa/"> <img src="images/linkedin.png" alt="LinkedIn icon"></a>
+      <a class="icon" href="https://www.linkedin.com/in/m-natalia-costa/"><i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i></a>
+      <a class="icon" href="mailto:mncosta@umich.edu"><i class="fas fa-envelope fa-2x" aria-label="Email"></i></a>
     </footer>
 
   </body>

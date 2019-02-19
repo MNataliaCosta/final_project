@@ -2,8 +2,11 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name = ‘viewport’ content=‘width=device-width, initial-scale=1, maximum-scale=1’>
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" href="images/beach.png" type="images/beach.png"/>
     <title>Natalia Costa - Home Page</title>
   </head>
@@ -11,53 +14,62 @@
 
     <header>
       <p class="skip"><a href="#main-content-home">Skip to content</a></p>
+      <h1>NATALIA COSTA</h1>
+      <!-- <h2>MBA & Master of Science in Information | Human-Computer Iteraction<br>
+      University of Michigan </h2> -->
       <nav>
         <ul>
-          <li><a href="about.html">ABOUT</a></li>
           <li><a class="current" href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
 
-      <h1>NATALIA COSTA</h1>
-      <h2>MBA & Master of Science in Information | Human-Computer Iteraction<br>
-      University of Michigan </h2>
+
     </header>
 
-    <main id="main-content-home" class="projects">
-      <h3>Projects</h3>
+    <main id="main-content-home">
+      <h2>Projects</h2>
 
-      <ul>
-        <li>Michigan Visiting Nurses
-          <img src="images/mvn.JPG" alt="Michigan Visiting Nurses logo">
-          <ul>
-            <li>- contextual inquiry</li>
-            <li>- improvement of home care visits scheduling process</li>
-          </ul>
-        </li>
+      <div class="projects">
+        <div id="mvn-callout" class="project-tile">
+          <div class="center">
+            <h3>Michigan Visiting Nurses</h3>
+              <ul>
+                <li>- contextual inquiry</li>
+                <li>- improvement of home care visits scheduling process</li>
+              </ul>
+          </div>
+        </div>
 
-        <li><a href="project.html">WalkHer App</a>
-          <a href="project.html"><img src="images/walkher.jpg" alt="WalkHer screenshots"></a>
-          <ul>
-            <li>- interaction design</li>
-            <li>- walk-sharing app to advance women's safety in public spaces</li>
-          </ul>
-        </li>
+        <div id="walkher-callout" class="project-tile">
+          <div class="center">
+            <h3><a href="project.html">WalkHer App</a></h3>
+              <!-- <a href="project.html"><img src="images/walkher.jpg" alt="WalkHer screenshots"></a> -->
+              <ul>
+                <li>- interaction design</li>
+                <li>- walk-sharing app to advance women's safety in public spaces</li>
+              </ul>
+          </div>
+        </div>
 
-        <li>Business Education Navigation App
-          <img src="images/gooru.JPG" alt="Gooru logo">
-          <ul>
-            <li>- product strategy</li>
-            <li>- predictive platform for individualized learning paths to business students</li>
-          </ul>
-        </li>
-      </ul>
+        <div id="gooru-callout" class="project-tile">
+          <div class="center">
+            <h3>Business Education Navigation App</h3>
+              <!-- <img src="images/gooru.JPG" alt="Gooru logo"> -->
+              <ul>
+                <li>- product strategy</li>
+                <li>- predictive platform for individualized learning paths to business students</li>
+              </ul>
+          </div>
+        </div>
 
+      </div>
     </main>
 
     <footer>
       <p>Contact information:</p>
-      <a class="icon" href="mailto:mncosta@umich.edu"><img src="images/email.png" alt="email icon"></a>
-      <a class="icon" href="https://www.linkedin.com/in/m-natalia-costa/"> <img src="images/linkedin.png" alt="LinkedIn icon"></a>
+      <a class="icon" href="https://www.linkedin.com/in/m-natalia-costa/"><i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i></a>
+      <a class="icon" href="mailto:mncosta@umich.edu"><i class="fas fa-envelope fa-2x" aria-label="Email"></i></a>
     </footer>
 
   </body>

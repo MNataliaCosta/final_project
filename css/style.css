@@ -12,6 +12,10 @@ body{
   /* padding-block-start: 5rem; */
 }
 
+ul{
+  list-style-type: none;
+}
+
 nav ul{
   list-style-type: none;
   /* position: fixed; */
@@ -26,14 +30,14 @@ nav ul{
 }
 
 nav li {
-  float:right;
+  float: right;
 }
 
 nav a{
   text-decoration: none;
   color: white;
   display: block;
-  padding: 20px
+  padding: 20px;
 }
 
 nav a:focus{
@@ -50,8 +54,9 @@ h1{
 } */
 
 main{
-  padding-left: 2vw;
-  padding-right: 2vw;
+  /* padding-left: 2vw;
+  padding-right: 2vw; */
+  padding: 2vw;
 }
 
 img {
@@ -107,13 +112,12 @@ img {
 }
 
 .project-tile ul{
-  list-style-type: none;
   margin: auto;
 }
 
 .center{
   position: absolute;
-    top: 50%;
+  top: 50%;
   padding-top: 2vh;
   padding-bottom: 2vh;
   transform: translateY(-50%);
@@ -127,11 +131,17 @@ img {
   color: white;
 }
 
+.arrow-icon i{
+  display: none;
+}
+
 .gallery{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .resume h2{
@@ -154,6 +164,10 @@ img {
 
 .container img{
   margin: 2vh;
+}
+
+.icon{
+  color: #8a8f96;
 }
 
 /* responsive design for larger screens */
@@ -190,5 +204,26 @@ img {
   .profile img{
     width:50vh;
     height: 75vh;
+  }
+}
+
+@media only screen and (max-width:850px) and (orientation: landscape) {
+  #main-content-project{
+    padding: 1rem;
+    font-size: 5rem;
+    text-align: center;
+    color: #6e7175;
+  }
+
+  .project-keywords li{
+    text-align: center;
+    color: #6e7175;
+  }
+
+  .arrow-icon i{
+    display: inline-block;
+    margin-left: 44vw;
+    color: #8a8f96;
+    text-decoration: none;
   }
 }

@@ -51,9 +51,9 @@ nav a{
   padding: 2vh;
 }
 
-nav li a:focus{
+/* nav li a:focus{
   background-color: #111;
-}
+} */
 
 h1{
   font-size: 30px;
@@ -190,6 +190,41 @@ img {
   color: #8a8f96;
 }
 
+
+/* responsive for mobile landscape */
+@media only screen and (max-width:850px) and (orientation: landscape) {
+  nav{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 15%;
+  }
+
+  #main-content-project{
+    padding: 1rem;
+    font-size: 5rem;
+    text-align: center;
+    color: #6e7175;
+  }
+
+  .projects{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+  }
+
+  .project-keywords li{
+    text-align: center;
+    color: #6e7175;
+  }
+
+  .arrow-icon i{
+    display: inline-block;
+    margin-left: 44vw;
+    color: #8a8f96;
+    text-decoration: none;
+  }
+}
+
 /* responsive design for larger screens */
 @media screen and (min-width:500px){
   header{
@@ -203,7 +238,7 @@ img {
   nav{
     display: flex;
     flex-flow: row nowrap;
-    width: 15%;
+    width: 10%;
   }
 
   nav ul{
@@ -267,27 +302,5 @@ img {
   .profile img{
     width:50vh;
     height: 75vh;
-  }
-}
-
-/* responsive for mobile landscape */
-@media only screen and (max-width:850px) and (orientation: landscape) {
-  #main-content-project{
-    padding: 1rem;
-    font-size: 5rem;
-    text-align: center;
-    color: #6e7175;
-  }
-
-  .project-keywords li{
-    text-align: center;
-    color: #6e7175;
-  }
-
-  .arrow-icon i{
-    display: inline-block;
-    margin-left: 44vw;
-    color: #8a8f96;
-    text-decoration: none;
   }
 }

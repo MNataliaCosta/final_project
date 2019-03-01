@@ -144,6 +144,7 @@ img {
   background-color: #333;
   color: white;
   opacity: 0.9;
+  width: 100%;
 }
 
 .center a{
@@ -195,8 +196,8 @@ img {
 @media only screen and (max-width:850px) and (orientation: landscape) {
   nav{
     display: flex;
-    flex-flow: row nowrap;
-    width: 15%;
+    flex-direction: column;
+    width: 100%;
   }
 
   #main-content-project{
@@ -226,7 +227,7 @@ img {
 }
 
 /* responsive design for larger screens */
-@media screen and (min-width:500px){
+@media screen and (min-width:850px){
   header{
     display: flex;
     flex-flow: row nowrap;

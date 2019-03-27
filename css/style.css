@@ -193,7 +193,7 @@ img {
 
 
 /* responsive for mobile landscape */
-@media only screen and (max-width:850px) and (orientation: landscape) {
+@media only screen and (orientation: landscape) {
   nav{
     display: flex;
     flex-direction: column;

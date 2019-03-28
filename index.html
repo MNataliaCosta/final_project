@@ -18,36 +18,38 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/beach.png" type="images/beach.png"/>
     <title>Natalia Costa - Home Page</title>
   </head>
   <body>
+    <div class="mobile-container">
+      <header class = "topnav">
+        <p class="skip"><a href="#main-content-home">Skip to content</a></p>
+        <img href="index.html" class="mylogo" src="images/mn_logo.png" alt="logo Maria Natalia">
+        <!-- <p class="name">NATALIA COSTA</p> -->
+        <!-- <h2>MBA & Master of Science in Information | Human-Computer Iteraction<br>
+        University of Michigan </h2> -->
+        <nav id="menu-options">
+          <ul>
+            <li class="current"><a href="index.html">HOME</a></li>
+            <li><a href="project_view.html">PROJECTS</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="menuClick()"><i class="fa fa-bars" aria-label="Menu Icon"></i></a>
+      </header>
 
-    <header>
-      <p class="skip"><a href="#main-content-home">Skip to content</a></p>
-      <img class="mylogo" src="images/mn_logo.png" alt="logo Maria Natalia">
-      <!-- <p class="name">NATALIA COSTA</p> -->
-      <!-- <h2>MBA & Master of Science in Information | Human-Computer Iteraction<br>
-      University of Michigan </h2> -->
-      <nav>
-        <ul>
-          <li class="current"><a href="index.html">HOME</a></li>
-          <li><a href="project_view.html">PROJECTS</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <main id="main-content-home">
-      <p class="name">Natalia Costa</p>
-      <div id="type"></div>
-    </main>
-
-    <!-- <footer>
-      <p>Contact information:</p>
-      <a class="icon" href="https://www.linkedin.com/in/m-natalia-costa/"><i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i></a>
-      <a class="icon" href="mailto:mncosta@umich.edu"><i class="fas fa-envelope fa-2x" aria-label="Email"></i></a>
-    </footer> -->
+      <main id="main-content-home">
+        <p class="name">Natalia Costa</p>
+        <div id="type"></div>
+      </main>
+    </div>
+      <!-- <footer>
+        <p>Contact information:</p>
+        <a class="icon" href="https://www.linkedin.com/in/m-natalia-costa/"><i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i></a>
+        <a class="icon" href="mailto:mncosta@umich.edu"><i class="fas fa-envelope fa-2x" aria-label="Email"></i></a>
+      </footer> -->
 
     <script type="text/javascript">
       var typeText = new Array(
@@ -87,9 +89,16 @@
         setTimeout("typewriter()", iSpeed);
        }
       }
-
       typewriter();
 
+      function menuClick() {
+        var menu = document.getElementById("menu-options");
+        if (menu.style.display === "block") {
+          menu.style.display = "none";
+        } else {
+          menu.style.display = "block";
+        }
+      }
     </script>
 
   </body>

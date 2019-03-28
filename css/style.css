@@ -77,14 +77,6 @@ img {
   border: 1px groove #021a40;
 }
 
-#name{
-  font-size: 30px;
-  color: white;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  text-align: center;
-}
-
 #type{
   font-family: 'Anonymous Pro', monospace;
   font-size: 31px;
@@ -107,6 +99,14 @@ img {
 #gooru-callout{
   background-color: white;
   background-image: url(../images/gooru.JPG);
+}
+
+.name{
+  font-size: 30px;
+  color: white;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
 }
 
 .skip a{

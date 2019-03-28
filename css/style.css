@@ -55,14 +55,6 @@ nav a{
   background-color: #111;
 } */
 
-h1{
-  font-size: 30px;
-  color: white;
-  padding-top: 1vh;
-  padding-bottom: 1vh;
-  text-align: center;
-}
-
 /* h2, p{
   padding-bottom: 20px;
 } */
@@ -70,7 +62,7 @@ h1{
 main{
   /* padding-left: 2vw;
   padding-right: 2vw; */
-  padding: 2vw;
+  padding: 2vh 4vh;
 }
 
 body{
@@ -83,6 +75,22 @@ img {
   max-width: 100%;
   height: auto;
   border: 1px groove #021a40;
+}
+
+#name{
+  font-size: 30px;
+  color: white;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  text-align: center;
+}
+
+#type{
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 4vh;
+  margin: 10vh 2vh;
+  line-height: 6vh;
+  color: #333;
 }
 
 /* maybe include a :focus transition to grayscale?*/

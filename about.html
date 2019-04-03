@@ -10,6 +10,8 @@
 
       gtag('config', 'UA-137130921-1');
     </script>
+    <!-- menu js -->
+    <script type="text/javascript" src="js/menu.js"></script>
     <meta charset="utf-8">
     <meta name = "viewport" content= "width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/html5reset.css">
@@ -20,40 +22,41 @@
     <title>Natalia Costa - About</title>
   </head>
   <body>
-
-    <header>
-      <p class="skip"><a href="#main-content-about">Skip to content</a></p>
-      <img class="mylogo" src="images/mn_logo.png" alt="logo Maria Natalia">
+    <div class="mobile-container">
+      <header class = "topnav">
+        <p class="skip"><a href="#main-content-about">Skip to content</a></p>
+        <img href="index.html" class="mylogo" src="images/mn_logo.png" alt="logo Maria Natalia">
       <!-- <h2>MBA & Master of Science in Information | Human-Computer Iteraction<br>
       University of Michigan </h2> -->
-      <nav>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="project_view.html">PROJECTS</a></li>
-          <li class="current"><a href="about.html">ABOUT</a></li>
-        </ul>
-      </nav>
-    </header>
+        <nav id="menu-options">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="project_view.html">PROJECTS</a></li>
+            <li class="current"><a href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+        <a href="javascript:void(0);" class="icon" onclick="menuClick()"><i class="fa fa-bars" aria-label="Menu Icon"></i></a>
+      </header>
 
-    <main>
-      <div class="container">
+      <main id="main-content-home">
+        <div class="container">
 
-        <aside class="profile">
-          <img src="images/profile.jpg" alt="profile picture">
-        </aside>
+          <aside class="profile">
+            <img src="images/profile.jpg" alt="profile picture">
+          </aside>
 
-        <p id="main-content-about"> Hi! I am a MBA and MSI student at the University of Michigan. <br>
-        Born and raised in Brazil, I majored in International Relations with a minor in Business and Marketing. I worked for 5 year at Procter & Gamble, in São Paulo, with Marketing Communications, eventually being promoted to Communications Manager for Gillette before moving to the United States for my dual masters. <br>
-        <br>
-        Both my undergrad and previous professional experience made me realize how passionate I am about human behavior and my current degrees are geared toward further leveraging such understanding as a positive force in business. I am especially interested in the advances of voice interfaces and their impact on accessibility. <br>
-        <br>
-        On a personal level, I am all about learning new languages, good food, great music (ecletic but with a soft spot for classic rock), and lots of quality time with my loved ones.</p>
+          <p id="main-content-about"> Hi! I am a MBA and MSI student at the University of Michigan. <br>
+          Born and raised in Brazil, I majored in International Relations with a minor in Business and Marketing. I worked for 5 year at Procter & Gamble, in São Paulo, with Marketing Communications, eventually being promoted to Communications Manager for Gillette before moving to the United States for my dual masters. <br>
+          <br>
+          Both my undergrad and previous professional experience made me realize how passionate I am about human behavior and my current degrees are geared toward further leveraging such understanding as a positive force in business. I am especially interested in the advances of voice interfaces and their impact on accessibility. <br>
+          <br>
+          On a personal level, I am all about learning new languages, good food, great music (ecletic but with a soft spot for classic rock), and lots of quality time with my loved ones.</p>
 
-        <p><a href="resume.html">Resumé</a></p>
+          <p><a href="resume.html">Resumé</a></p>
 
-      </div>
-    </main>
-
+        </div>
+      </main>
+    </div>
     <footer>
       <p>Contact information:</p>
       <a class="icon" href="https://www.linkedin.com/in/m-natalia-costa/"><i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i></a>

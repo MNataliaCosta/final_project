@@ -10,6 +10,8 @@
 
       gtag('config', 'UA-137130921-1');
     </script>
+    <!-- menu js -->
+    <script type="text/javascript" src="js/menu.js"></script>
     <meta charset="utf-8">
     <meta name = "viewport" content= "width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/html5reset.css">
@@ -22,19 +24,21 @@
   <body>
 
 <!-- testing h1 on header to use flexbox for positioning navbar; replicate across htmls if it works -->
-    <header>
+    <div class="mobile-container">
+      <header class = "topnav">
       <p class="skip"><a href="#main-content-project">Skip to content</a></p>
-      <img class="mylogo" src="images/mn_logo.png" alt="logo Maria Natalia">
-      <nav>
+      <img href="index.html" class="mylogo" src="images/mn_logo.png" alt="logo Maria Natalia">
+      <nav id="menu-options">
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="project_view.html">PROJECTS</a></li>
           <li><a href="about.html">ABOUT</a></li>
         </ul>
       </nav>
+      <a href="javascript:void(0);" class="icon" onclick="menuClick()"><i class="fa fa-bars" aria-label="Menu Icon"></i></a>
     </header>
 
-    <main>
+    <main id="main-content-home">
       <p><a href="index.html">home</a> > <a href="project_view.html">projects</a></p>
 
       <h2 id="main-content-project">WALKHER APP</h2>
@@ -86,7 +90,7 @@
         <p>After selecting someone and joining them for a walk, the user can follow her journey on a map and see the estimated time of arrival (ETA) to the destination. At any point, she might also decide to share her walk her guardians and, if she ever feels in danger, she can send an SOS alert. Upon the completion of the walk, if enabled, the guardians will be notified of the completion of the journey. Lastly, the user will be prompted to leave an optional review of her walk company to continue to strengthen the safety credentials of the service.</p>
         <p>Perhaps one of the biggest insights throughout this project was deconstructing my preconception that it should be a women’s only network and expand it to solution that gives women the freedom of choice. Moreover, I expect the connections between the walk companies to be built not out of fear but rather of a sense of community building driven by safety and getting to know trustworthy people from the users’ extended networks. As for the future of the solution, I foresee some challenges. How to make it more accessible? Connectivity is a big component for the success of the app. How to drive the design goals were internet data is not ubiquitous or spotty? How to deal with users’ data regarding contact list, GPS-tracking, and usage?</p>
     </main>
-
+  </div>
     <footer>
       <p>Contact information:</p>
       <a class="icon" href="https://www.linkedin.com/in/m-natalia-costa/"><i class="fab fa-linkedin fa-2x" aria-label="LinkedIn"></i></a>

@@ -405,6 +405,18 @@ img {
     margin: 1vh;
   }
 
+  .buttons{
+    visibility: hidden;
+  }
+
+  .content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pic{
+    margin: 1vh;
+  }
   /* nav{
     display: flex;
     flex-direction: column;
@@ -533,6 +545,10 @@ img {
   } */
 
   .active button {
+    visibility: visible;
+  }
+
+  .buttons{
     visibility: visible;
   }
 

@@ -310,7 +310,7 @@ img {
 
 
 /* responsive for tablet */
-@media screen and (min-width:700px) {
+@media screen and (min-width:650px) {
   /* .topnav {
     display: block;
     position: relative;
@@ -334,7 +334,7 @@ img {
 
   .mylogo{
     position: absolute;
-    max-width: 8%;
+    max-width: 70px;
     margin-left: 2vh;
   }
 
@@ -428,7 +428,7 @@ img {
 }
 
 /* responsive design for larger screens */
-@media screen and (min-width:1200px){
+@media screen and (min-width:1050px){
   header{
     display: flex;
     flex-flow: row nowrap;

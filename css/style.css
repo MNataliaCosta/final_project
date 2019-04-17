@@ -121,7 +121,7 @@ img {
   /* max-width: 480px; */
   margin: auto;
   /* background-color: #555; */
-  height: 900px;
+  /* height: 900px; */
   /* color: white;
   border-radius: 10px; */
 }
@@ -307,7 +307,6 @@ img {
 .icon{
   color: #8a8f96;
 }
-
 
 /* responsive for tablet */
 @media screen and (min-width:650px) {

@@ -6,6 +6,10 @@
   /* background-color: #333;
 } */
 
+h1{
+  visibility: hidden;
+}
+
 ul{
   list-style-type: none;
 }
@@ -80,11 +84,10 @@ img {
 #type{
   font-family: 'Anonymous Pro', monospace;
   font-size: 30px;
-  margin: 60px 40px;
-  line-height: 50px;
-  color: #666;
+  margin: 50px 20px;
+  line-height: 65px;
+  color: #993366;
 }
-
 /* maybe include a :focus transition to grayscale?*/
 #mvn-callout{
   background-color: white;
@@ -108,13 +111,16 @@ img {
 }
 
 .name{
-  font-size: 56px;
-  color: #333;
-  font-weight: 900;
-  margin-top: 40px;
+  visibility: visible;
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-size: 10vw;
+  color: #444;
+  font-weight: 700;
+  margin-top: 80px;
+  margin-left: 20px;
   /* padding-top: 1vh;
   padding-bottom: 1vh; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 .mobile-container {
@@ -214,6 +220,11 @@ img {
 /* .arrow-icon i{
   display: none;
 } */
+
+#main-content-project{
+  visibility: visible;
+}
+
 
 .accordionItem{
   text-align: left;
@@ -391,6 +402,16 @@ img {
 
   .fa-bars{
     display: none;
+  }
+
+  .name{
+    margin-left: 60px;
+    margin-bottom: 40px;
+  }
+
+  #type{
+    margin: 30px 60px;
+    font-size: 5vw;
   }
 
   .projects{

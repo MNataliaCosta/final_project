@@ -89,7 +89,11 @@ img {
   line-height: 65px;
   color: #993366;
 }
-/* maybe include a :focus transition to grayscale?*/
+
+.projects{
+  margin-bottom: 12vh;
+}
+
 #mvn-callout{
   background-color: white;
   background-image: url(../images/mvn.JPG);
@@ -199,6 +203,7 @@ img {
 
 .project-tile ul{
   margin: auto;
+  line-height: 3vh;
 }
 
 .center{
@@ -211,6 +216,11 @@ img {
   color: white;
   opacity: 0.9;
   width: 100%;
+}
+
+.center h2{
+  font-size: 3vh;
+  margin-bottom: 1vh;
 }
 
 .center a{
@@ -359,17 +369,45 @@ footer{
 
 /* responsive for tablet */
 @media screen and (min-width:650px) {
-  /* .topnav {
-    display: block;
-    position: relative;
-    height: 12vh;
+  .topnav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+  }
+
+  /* nav{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 10%;
   } */
+
+  .topnav ul{
+    /* list-style-type: none; */
+    /* position: fixed; */
+    /* display: block; */
+    /* width: 100%; */
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav ul li{
+    display: inline-block;
+    /* width: 25%; */
+  }
+  /* end test */
 
   .topnav #menu-options {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-  }
+  } */
 
   .topnav li:hover {
     background-color: #ddd;
@@ -428,7 +466,7 @@ footer{
     background-color: #111;
   }*/
 
-  nav li {
+  .topnav li {
     float: right;
     padding-top: 1vh;
     padding-bottom: 1vh;
@@ -509,9 +547,9 @@ footer{
 
 /* responsive design for larger screens */
 @media screen and (min-width:1050px){
-  header{
+  .topnav{
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #333;
@@ -523,7 +561,7 @@ footer{
     width: 10%;
   } */
 
-  nav ul{
+  .topnav ul{
     /* list-style-type: none; */
     /* position: fixed; */
     /* display: block; */
@@ -537,7 +575,7 @@ footer{
     background-color: #333;
   }
 
-  nav ul li{
+  .topnav ul li{
     display: inline-block;
     /* width: 25%; */
   }
@@ -582,7 +620,6 @@ footer{
 		max-width: 70%;
     margin: auto;
 	}
-
 
   /* .content {
     margin: 0;

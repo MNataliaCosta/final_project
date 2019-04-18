@@ -311,10 +311,16 @@ img {
   color: #333;
 }
 
-.resume h4, li{
+.resume h4{
   /* margin: 1vh 0; */
   color: #333;
-  line-height: 20px
+  line-height: 22px
+}
+
+.resume li{
+  /* margin: 1vh 0; */
+  color: #333;
+  line-height: 22px
 }
 
 .profile{

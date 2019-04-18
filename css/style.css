@@ -295,7 +295,7 @@ img {
 
 .link-resume{
   text-align: center;
-  margin: 1vh;
+  margin: 2vh;
 }
 
 .resume h2{
@@ -313,8 +313,7 @@ img {
 }
 
 .container p{
-  /* padding: 2vh; */
-  margin: 2vh 4vh;
+  margin: 2vh 5vh;
   line-height: 4vh;
 }
 
@@ -323,8 +322,19 @@ img {
 }
 
 .icon{
-  color: #8a8f96;
+  color: #fff;
+  margin: 3px;
 }
+
+footer{
+  background-color: #777;
+  padding: 2vh;
+  padding-left: 3vh;
+}
+
+/* footer p{
+  color: #fff;
+} */
 
 /* responsive for tablet */
 @media screen and (min-width:650px) {

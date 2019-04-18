@@ -236,7 +236,6 @@ img {
   visibility: visible;
 }
 
-
 .accordionItem{
   text-align: left;
   display: block;
@@ -374,7 +373,7 @@ footer{
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    /* background-color: #333; */
   }
 
   /* nav{
@@ -401,13 +400,22 @@ footer{
     display: inline-block;
     /* width: 25%; */
   }
-  /* end test */
+
+  .topnav li {
+    float: right;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    min-height: 4vh;
+    line-height: 4vh;
+    border-width: 2px;
+    text-align: center;
+  }
 
   .topnav #menu-options {
     display: flex;
     flex-direction: row;
     align-self: flex-end;
-  } */
+  }
 
   .topnav li:hover {
     background-color: #ddd;
@@ -465,16 +473,6 @@ footer{
     width: 100%;
     background-color: #111;
   }*/
-
-  .topnav li {
-    float: right;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-  	min-height: 4vh;
-  	line-height: 4vh;
-  	border-width: 2px;
-  	text-align: center;
-  }
 
   .fa-bars{
     display: none;
@@ -589,6 +587,15 @@ footer{
     /* flex-direction: row; */
     /* width: 25%; */
   /* } */
+
+  .topnav li:hover {
+    background-color: #ddd;
+  }
+
+  .topnav a:hover{
+    color: black;
+    font-weight: normal;
+  }
 
   .projects{
     display: flex;

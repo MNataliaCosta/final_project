@@ -66,7 +66,8 @@ nav a{
 main{
   /* padding-left: 2vw;
   padding-right: 2vw; */
-  padding: 2vh 4vh;
+  margin: 2vh 4vh;
+  margin-bottom: 8vh;
 }
 
 body{
@@ -300,6 +301,20 @@ img {
 
 .resume h2{
   padding-top: 20px;
+  font-family: 'Parisienne', cursive;
+  color: #993366;
+  font-size: 5vh;
+}
+
+.resume h3{
+  margin-top: 2vh;
+  color: #333;
+}
+
+.resume h4, li{
+  /* margin: 1vh 0; */
+  color: #333;
+  line-height: 20px
 }
 
 .profile{
@@ -645,5 +660,10 @@ footer{
   .link-resume{
     text-align: left;
     margin: 2vh;
+  }
+
+  .resume{
+    margin: 2vh 6vh;
+    margin-bottom: 8vh;
   }
 }

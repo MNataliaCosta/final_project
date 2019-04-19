@@ -368,12 +368,16 @@ img {
 }
 
 .container p{
-  margin: 2vh 5vh;
+  margin: 1vh 5vh;
   line-height: 4vh;
 }
 
 .container img{
   margin: 2vh;
+}
+
+.text{
+  margin-top: 2vh;
 }
 
 .icon{

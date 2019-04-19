@@ -233,7 +233,25 @@ img {
 } */
 
 #main-content-project{
+  /* change font-size for larger screens */
   visibility: visible;
+  text-align: center;
+  font-family: 'Libre Barcode 39 Extended Text', cursive;
+  font-size: 5vh;
+  margin: 5vh 0vh 1vh 0vh;
+  line-height: 6vh;
+  color: #333;
+}
+
+.project-keywords{
+  text-align: center;
+  color: #6e7175;
+  font-family: 'Anonymous Pro', monospace;
+  margin: 2vh 0;
+}
+
+.accordionWrapper{
+  margin: 4vh 0;
 }
 
 .accordionItem{
@@ -241,6 +259,10 @@ img {
   display: block;
   width: 100%;
   box-sizing: border-box;
+}
+
+.accordionItem p{
+  margin-bottom: 2vh;
 }
 
 .accordionItemHeading{
@@ -251,6 +273,8 @@ img {
   color: #fff;
   width: 100%;
   box-sizing: border-box;
+  font-family: 'Anonymous Pro', monospace;
+  font-size: 20px;
 }
 
 .close .accordionItemContent{
@@ -265,8 +289,7 @@ img {
 }
 
 .open .accordionItemContent{
-  padding: 20px;
-  /* background-color: #fff; */
+  padding: 20px 20px 0 20px;
   border: 1px solid #ddd;
   width: 100%;
   margin: 0px 0px 10px 0px;
@@ -283,6 +306,9 @@ img {
 	-o-transition: -o-transform 0.4s ease;
 	-ms-transition: -ms-transform 0.4s ease; */
   box-sizing: border-box;
+  color: #111;
+  line-height: 22px;
+  background-color: #ddd;
 }
 
 .open .accordionItemHeading{
@@ -294,7 +320,6 @@ img {
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
@@ -323,7 +348,7 @@ img {
 .resume h4{
   /* margin: 1vh 0; */
   color: #333;
-  line-height: 22px
+  line-height: 22px;
 }
 
 .resume li{
@@ -497,6 +522,15 @@ footer{
   .project-tile{
     height: 170px;
     margin: 1vh;
+  }
+
+  #main-content-project{
+    font-size: 8vh;
+    margin: 10vh 0 5vh 0;
+  }
+
+  .project-keywords{
+    margin: 6vh 0;
   }
 
   .buttons{

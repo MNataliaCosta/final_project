@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Extended+Text" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="icon" href="images/beach.png" type="images/beach.png"/>
     <title>Natalia Costa - Projects</title>
@@ -39,13 +41,10 @@
     </header>
 
     <main id="main-content-home">
-      <p><a href="index.html">home</a> > <a href="project_view.html">projects</a></p>
-
-      <h1 id="main-content-project">WALKHER APP</h1>
-      <ul class="project-keywords">
-        <li>- walk-sharing</li>
-        <li>- women's safety</li>
-      </ul>
+      <h1 id="main-content-project">WalkHer App</h1>
+      <p class="project-keywords">
+        walk-sharing | women's safety
+      </p>
 
       <div id="beginning-project" class="accordionWrapper">
         <div class="accordionItem open">
@@ -60,12 +59,9 @@
           <h2 class="accordionItemHeading">Methodology</h2>
           <div class="accordionItemContent">
             <p>The process kicked-off with a competitive analysis in which I identified three hypotheses on the needs of women trying to go from point A to B in public spaces:</p>
-              <ol>
-                <li>There are several map tools available nowadays to help users find the best route in terms of distance and duration, but none seem to provide information regarding personal safety. If women could search and see areas with high harassment or assault incidents, they would be better equipped to avoid such areas and proceed with a safer journey;</li>
-                <li>Creating a support network through which women can connect to and accompany each other increases their safety. However, the competitive design analyzed provided either a network that was too narrow (only user-reported contacts, such as bSafe) or too impersonal (any women user, such as 3 Marias);</li>
-                <li>It is better to have a response mechanism that, hopefully, will never need to be used than not having one in case of emergency. The existing emergency response mechanisms, however, have either physical limitations (e.g. Emergency Blue Lights on certain locations on campus) or feedback limitations (e.g. bSafe allows the user to notify appointed contacts but doesn't provide a feedback on whether the contact has received and acted upon the alert).</li>
-              </ol>
-              <br>
+            <p>- There are several map tools available nowadays to help users find the best route in terms of distance and duration, but none seem to provide information regarding personal safety. If women could search and see areas with high harassment or assault incidents, they would be better equipped to avoid such areas and proceed with a safer journey;</p>
+            <p>- Creating a support network through which women can connect to and accompany each other increases their safety. However, the competitive design analyzed provided either a network that was too narrow (only user-reported contacts, such as bSafe) or too impersonal (any women user, such as 3 Marias);</p>
+            <p>- It is better to have a response mechanism that, hopefully, will never need to be used than not having one in case of emergency. The existing emergency response mechanisms, however, have either physical limitations (e.g. Emergency Blue Lights on certain locations on campus) or feedback limitations (e.g. bSafe allows the user to notify appointed contacts but doesn't provide a feedback on whether the contact has received and acted upon the alert).</p>
             <p>These three perspectives were my guiding north in brainstorming and sketching. Initially, I focused more on format than function. Following Ginsburg’s maxim of “Don't run with the first good idea, take time to think about different approaches” (Ginsburg, 2010), I explored physical and digital designs; wearables, whistles, web pages, apps, totems, and trained professionals. Afterward, the exercise of personas and storyboarding helped me to refine key assumptions and decide for an app as the format for the solution. Women’s safety is such a pressing issue and I believe the solution has better chances of being adopted if present in a device that is already present in the users' lives.</p>
             <p>Once the format was defined, the QOC exercise broadened the possibilities of functions. I had decided to pursue a walk-sharing solution that looked and felt like a ride-sharing with the expectation to make it easier for users to understand how to use it. As Norman discussed on The Design of Everyday Things, when a user first encounters a novel object or design, he can tell how to use it either by previous experience with a similar design or by obtaining instructions (Norman, 2013). Yet, the feedback received from this stage onwards helped me to challenge the assumption that similarities would create a positive learning transfer. Instead, they signaled that similarities might lead to confusion, as the design is supposed to be a peer-to-peer, free network instead of a paid service. Additionally, I consistently heard that, although women should certainly be the primary target, men should also play a supporting role. Thus, the final solution was to allow women to select themselves whether to be paired with other women only or both women and men.</p>
             <p>Ultimately, the design process certainly was not a linear one (Appendix C showcases the evolution from the initial idea sketch to some key screen from the final digital prototype). Although one step helped to build the next one, ideas previously discarded were later recycled, and initial biases were identified and deconstructed.</p>
@@ -76,12 +72,9 @@
           <h2 class="accordionItemHeading">Final Design and Learnings</h2>
           <div class="accordionItemContent">
             <p>The final design has the philosophy of promoting women’s empowerment via safety and community, enabling users to feel more confident in exploring their surroundings and beyond. It consists of three main functionalities:</p>
-              <ol>
-                <li>Enable selected contacts, such as friends and family, to follow – upon user activation - the user’s journey in real-time and, thus, keep track of her whereabouts and check whether she arrives safely at her destination</li>
-                <li>Pair the user, according to similar routes, with walking partners within an extended network (friends and friends of friends)</li>
-                <li>Trigger an alert to guardians and police when the user reports being in danger by clicking the SOS button</li>
-              </ol>
-              <br>
+            <p>1. Enable selected contacts, such as friends and family, to follow – upon user activation - the user’s journey in real-time and, thus, keep track of her whereabouts and check whether she arrives safely at her destination</p>
+            <p>2. Pair the user, according to similar routes, with walking partners within an extended network (friends and friends of friends)</p>
+            <p>3. Trigger an alert to guardians and police when the user reports being in danger by clicking the SOS button</p>
             <p>Upon opening the app, the user can decide to either share at any time her real-time location with her appointed guardians or start the search for a company for her walk. If she decides to search for other people to walk with her, she needs to input start and end points and the app will present options of other users doing a similar path. Considering the goal of safety, giving the user the freedom to validate and choose whom to share the walk with, instead of being automatically paired with someone, was a critical design choice. She can see the friends she has in common with the available walkers and additional details, such as ratings, the number of walks completed, and interests in common.</p>
             <p>After selecting someone and joining them for a walk, the user can follow her journey on a map and see the estimated time of arrival (ETA) to the destination. At any point, she might also decide to share her walk her guardians and, if she ever feels in danger, she can send an SOS alert. Upon the completion of the walk, if enabled, the guardians will be notified of the completion of the journey. Lastly, the user will be prompted to leave an optional review of her walk company to continue to strengthen the safety credentials of the service.</p>
             <p>Perhaps one of the biggest insights throughout this project was deconstructing my preconception that it should be a women’s only network and expand it to solution that gives women the freedom of choice. Moreover, I expect the connections between the walk companies to be built not out of fear but rather of a sense of community building driven by safety and getting to know trustworthy people from the users’ extended networks. As for the future of the solution, I foresee some challenges. How to make it more accessible? Connectivity is a big component for the success of the app. How to drive the design goals were internet data is not ubiquitous or spotty? How to deal with users’ data regarding contact list, GPS-tracking, and usage?</p>

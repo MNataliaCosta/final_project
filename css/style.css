@@ -201,9 +201,10 @@ img {
   text-align: center;
 }
 
-.project-tile ul{
-  margin: auto;
+.center p{
+  margin: 1vh 5vh;
   line-height: 3vh;
+  text-align: left;
 }
 
 .center{
@@ -219,6 +220,7 @@ img {
 }
 
 .center h2{
+  font-family: 'Anonymous Pro', monospace;
   font-size: 3vh;
   margin-bottom: 1vh;
 }

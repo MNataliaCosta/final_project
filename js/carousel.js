@@ -12,7 +12,6 @@ carousel = (function(){
   var current = photos[0];
   // console.log(current)
 
-  // hide all elements and apply the carousel styling
   box.classList.add("active");
 
 
@@ -25,9 +24,7 @@ carousel = (function(){
 
   navigate(0);
 
-  // navigate through the carousel
   function navigate(direction) {
-    // hide the old current list item
     current.classList.remove("current");
 
     counter = counter + direction;
